@@ -64,7 +64,7 @@ class Particle {
     ctx.fill();
   }
 }
-
+/*
 const init = function(){
   for (let i = 0; i < 100; i++) {
     particleArray.push(new Particle());
@@ -72,7 +72,7 @@ const init = function(){
 }
 init();
 console.log(particleArray);
-
+*/
 const handleParticles = function() {
   for (let i = 0; i < particleArray.length; i++) {
     particleArray[i].update();
