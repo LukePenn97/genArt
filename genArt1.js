@@ -136,13 +136,9 @@ const handleParticles = function() {
           particleArray[i].size += 0.01;
           particleArray[j].size += 0.01;
         }
-        if (particleArray[j].lifespan <= 0) {
-          particleArray.splice(j,1);
-          i--;
-        }
       }
     }
-    if (particleArray[i].size <= 2) {
+    if (particleArray[i].size <= 2 || particleArray[i].lifespan <= 0) {
       particleArray.splice(i,1);
       i--;
     }
